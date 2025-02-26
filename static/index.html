@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система учета ЧОП</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Назначение смен</h1>
+    <div id="employees"></div>
+    <form id="shift-form">
+        <label for="employee">Сотрудник:</label>
+        <select id="employee" required></select>
+        <label for="start-time">Начало смены:</label>
+        <input type="datetime-local" id="start-time" required>
+        <label for="end-time">Конец смены:</label>
+        <input type="datetime-local" id="end-time" required>
+        <button type="submit">Назначить</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
